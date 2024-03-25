@@ -3,6 +3,6 @@ def solution(a, b):
     ba = int(str(b) + str(a))
     
     if ab >= ba :
-        return int(str(a) + str(b))
+        return ab
     else :
-        return int(str(b) + str(a))
+        return ba
