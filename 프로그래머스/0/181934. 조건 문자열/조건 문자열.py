@@ -1,9 +1,9 @@
 def solution(ineq, eq, n, m):
 
-    a = ineq == "<" and eq == "=" and n <= m and True
-    b = ineq == ">" and eq == "=" and n >= m and True
-    c = ineq == "<" and eq == "!" and n < m and True
-    d = ineq == ">" and eq == "!" and n > m and True
+    a = ineq == "<" and eq == "=" and n <= m 
+    b = ineq == ">" and eq == "=" and n >= m 
+    c = ineq == "<" and eq == "!" and n < m 
+    d = ineq == ">" and eq == "!" and n > m 
 
     if a or b or c or d:
         return 1
