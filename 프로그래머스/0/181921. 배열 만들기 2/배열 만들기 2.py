@@ -1,5 +1,9 @@
 def not_num(num):
-    return  '1'  not in str(num) and '2'  not in str(num) and '3'  not in str(num) and '4'  not in str(num) and '6'  not in str(num) and '7'  not in str(num) and '8'  not in str(num) and '9'  not in str(num)
+    for digit in '12346789':
+        if digit in str(num): 
+            return False       
+    return True
+    
 
 def solution(l, r):
     answer = []
