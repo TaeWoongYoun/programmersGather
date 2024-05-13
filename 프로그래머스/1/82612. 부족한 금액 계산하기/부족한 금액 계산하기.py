@@ -7,4 +7,4 @@ def solution(price, money, count):
     if answer <= money:
         return 0
         
-    return abs(money - answer)
+    return answer - money
