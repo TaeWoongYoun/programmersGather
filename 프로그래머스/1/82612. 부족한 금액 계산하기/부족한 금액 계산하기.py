@@ -4,9 +4,7 @@ def solution(price, money, count):
     for i in range(1, count+1):
         answer += price * i
     
-    if answer >= money:
-        answer = abs(money - answer)
-    else:
-        return 0    
+    if answer <= money:
+        return 0
         
-    return answer
+    return abs(money - answer)
